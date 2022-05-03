@@ -32,8 +32,10 @@
         {{ end }}
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a></h1>
-            <h2 class="site-description">{{ .Site.Params.sidebar.subtitle }}</h2>
+            <h1 class="site-name"><a href="{{ .Site.BaseURL | relLangURL }}">
+                <span class="special">{{ .Site.Params.logoText.start }}</span> 
+                {{ .Site.Params.logoText.end }}</a></h1>
+            <h2 class="site-description ">{{ .Site.Params.sidebar.subtitle }}</h2>
         </div>
     </header>
 
