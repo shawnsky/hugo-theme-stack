@@ -5,13 +5,15 @@
     border-radius: var(--card-border-radius);
     overflow: hidden;
     flex-wrap: wrap;
+    padding: 8px;
 
     .page-link {
-        padding: 16px 32px;
+        padding: 10px 20px;
         display: inline-flex;
 
         &.current {
-            font-weight: bold;
+            border-radius: var(--card-border-radius);
+            // font-weight: bold;
             background-color: var(--card-background-selected);
             color: var(--card-text-color-main);
         }
