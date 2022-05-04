@@ -18,11 +18,11 @@ article:
         other: 最后更新于
 
     readingTime:
-        other: "阅读时长: {{ .Count }} 分钟"
+        other: "阅读时长：大约 {{ .Count }} 分钟"
 
 notFound:
     title:
-        other: 404 错误
+        other: HTTP 404 错误
     subtitle:
         other: 页面不存在
 
@@ -44,17 +44,17 @@ widget:
 
 search:
     title:
-        other: 搜索
+        other: 站内搜索
 
     placeholder:
-        other: 输入关键词...
+        other: 请输入关键词
 
     resultTitle:
-        other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+        other: "共搜索到 #PAGES_COUNT 个结果（用时 #TIME_SECONDS 秒）"
 
 footer:
     builtWith:
-        other: Built with {{ .Generator }}
+        other: Site built with {{ .Generator }}.
 
     designedBy:
-        other: 主题 {{ .Theme }} 由 {{ .DesignedBy }} 设计
+        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}.

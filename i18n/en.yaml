@@ -30,12 +30,12 @@ article:
         other: Last updated on
 
     readingTime:
-        one: "{{ .Count }} minute read"
-        other: "{{ .Count }} minute read"
+        one: "Approximately {{ .Count }} minute(s) read"
+        other: "Approximately {{ .Count }} minute(s) read"
 
 notFound:
     title:
-        other: Not Found
+        other: HTTP 404 Error
 
     subtitle:
         other: This page does not exist
@@ -67,7 +67,7 @@ search:
 
 footer:
     builtWith:
-        other: Built with {{ .Generator }}
+        other: Site built with {{ .Generator }}.
 
     designedBy:
-        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}.
