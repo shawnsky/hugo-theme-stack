@@ -1,15 +1,19 @@
 {{- $context := .Context -}}
 {{- $limit := default 10 .Params.limit -}}
-<section class="widget tagCloud">
+<section class="widget categories-widget">
     <div class="widget-icon">
         {{ partial "helper/icon" "categories" }}
     </div>
     <h2 class="widget-title section-title">{{ T "widget.categoriesCloud.title" }}</h2>
 
-    <div class="tagCloud-tags">
+    <div class="c-block ">
         {{ range first $limit $context.Site.Taxonomies.categories.ByCount }}
-            <a href="{{ .Page.RelPermalink }}" class="font_size_{{ .Count }}">
-                {{ .Page.Title }}
+            <a href="{{ .Page.RelPermalink }}">
+                {{ if lt (len .Page.Title) 9 }}
+                <p>{{ .Page.Title }}</p>
+                {{ else }}
+                <p>{{ substr .Page.Title 0 9 }}...</p>
+                {{ end }}
             </a>
         {{ end }}
     </div>
