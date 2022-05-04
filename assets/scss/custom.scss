@@ -11,6 +11,7 @@
   .item-image {
     flex: 1;
     padding: 10px 0 10px 10px;
+    max-height: 200px;  // note: it is assumed that the height of `item-brief` will not exceed 200px
 
     img {
         width: 100%;
