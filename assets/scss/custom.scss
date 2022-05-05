@@ -63,6 +63,7 @@
     a {
       height: 50px;
       width: 85px;
+      user-select: none;
       background: var(--card-background);
       box-shadow: var(--shadow-l1);
       border-radius: var(--card-border-radius);

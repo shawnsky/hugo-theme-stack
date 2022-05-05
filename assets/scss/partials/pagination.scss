@@ -10,6 +10,7 @@
     .page-link {
         padding: 10px 20px;
         display: inline-flex;
+        user-select: none;
 
         &.current {
             border-radius: var(--card-border-radius);

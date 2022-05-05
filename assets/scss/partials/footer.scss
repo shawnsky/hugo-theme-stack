@@ -19,6 +19,7 @@ footer.site-footer {
     }
 
     .powerby {
+        user-select: none;
         color: var(--body-text-color);
         font-weight: normal;
         font-size: 1.2rem;

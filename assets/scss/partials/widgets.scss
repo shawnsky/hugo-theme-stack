@@ -57,10 +57,12 @@
                 flex: 1;
                 color: var(--card-text-color-main);
                 // font-weight: bold;
+                user-select: none;
             }
 
             span.count {
                 color: var(--card-text-color-tertiary);
+                user-select: none;
             }
         }
     }
