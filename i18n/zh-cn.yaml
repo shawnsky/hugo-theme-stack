@@ -53,8 +53,8 @@ search:
         other: "共搜索到 #PAGES_COUNT 个结果（用时 #TIME_SECONDS 秒）"
 
 footer:
-    builtWith:
-        other: Site built with {{ .Generator }}.
-
+    builtAndHostWith:
+        other: Site built with {{ .Generator }}, host by {{ .HostBy }}.
+    
     designedBy:
         other: Theme {{ .Theme }} designed by {{ .DesignedBy }}.
