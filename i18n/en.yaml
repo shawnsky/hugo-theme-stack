@@ -67,7 +67,7 @@ search:
 
 footer:
     builtAndHostWith:
-        other: Site built with {{ .Generator }}, host by {{ .HostBy }}.
+        other: Site built with {{ .Generator }}, hosted by {{ .HostedBy }}.
 
     designedBy:
         other: Theme {{ .Theme }} designed by {{ .DesignedBy }}.
