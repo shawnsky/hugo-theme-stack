@@ -5,36 +5,31 @@ paginate: 5
 title: Example Site
 
 languages:
+    zh-cn:
+        languageName: 简体中文
+        title: 示例网站
+        weight: 1
     en:
         languageName: English
         title: Example Site
-        weight: 1
-    zh-cn:
-        languageName: 中文
-        title: 演示站点
         weight: 2
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+disqusShortname: 
 
 # GA Tracking ID
-googleAnalytics:
+googleAnalytics: 
 
 # Theme i18n support
 # Available values: ar, ca, de, el, en, es, fr, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: false
 
 permalinks:
-    post: /p/:slug/
+    post: /post/:slug/
     page: /:slug/
 
 params:
@@ -42,22 +37,22 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: /a267f-7bdmg-001.ico  # put .ico into static
 
     footer:
-        since: 2020
-        customText:
+        since: 2015
+        customText: 
 
     dateFormat:
-        published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
+        published: 2006-01-02
+        lastUpdated: 2006-01-02 15:04
     
     logoText:
-        start: Example's
-        end: blog
+        start: Example
+        end: Site
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: make yourself better
         avatar:
             enabled: false
             local: true
@@ -152,15 +147,16 @@ params:
     widgets:
         homepage:
             - type: search
+
+            - type: categories
+              params:
+                  limit: 8
             - type: archives
               params:
                   limit: 5
-            - type: categories
-              params:
-                  limit: 10
-            - type: tag-cloud
-              params:
-                  limit: 10
+            # - type: tag-cloud
+            #   params:
+            #       limit: 10
         page:
             - type: toc
 
@@ -199,17 +195,28 @@ menu:
 
     social:
         - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          name: 1GitHub
+          url: https://github.com/
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: soundcloud
+          name: 2Soundcloud
+          url: https://soundcloud.com/
           params:
-              icon: brand-twitter
+              icon: brand-soundcloud
 
+        - identifier: email
+          name: 3Email
+          url: 
+          params:
+              icon: email
+
+        - identifier: rss
+          name: 4RSS
+          url: /index.xml
+          params:
+              icon: rss
 related:
     includeNewer: true
     threshold: 60
@@ -225,7 +232,7 @@ markup:
     goldmark:
         renderer:
             ## Set to true if you have HTML content inside Markdown
-            unsafe: false
+            unsafe: true
     tableOfContents:
         endLevel: 4
         ordered: true
